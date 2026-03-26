@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: oklch(71.5% 0.143 215.221);
+  --color-secondary: oklch(55.4% 0.046 257.417);
+  --breakpoint-2xl: 1320px;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 16px;
+  width: 100%;
+
+  @variant sm {
+    max-width: 640px;
+  }
+  @variant md {
+    max-width: 768px;
+  }
+  @variant lg {
+    max-width: 1024px;
+  }
+  @variant xl {
+    max-width: 1280px;
+  }
+  @variant 2xl {
+    max-width: 1320px;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.navbar-fixed {
+  @apply fixed z-999 border-b border-black/10 bg-white/70 backdrop-blur-sm;
+}
+
+.hamburger-line {
+  @apply my-2 block h-0.5 w-7.5 bg-black transition duration-300 ease-in-out;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
