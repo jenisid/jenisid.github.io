@@ -5,17 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary SEO -->
-    <title>JENIS | Natural Science Student & Portfolio</title>
+    <title>
+      Jen App | Portfolio, Projects & Learning in Science, Math & Tech
+    </title>
     <meta
       name="description"
-      content="Portfolio of JENIS — Natural Science student passionate about mathematics, analytical thinking, and problem-solving."
+      content="Jen App by JENIS | a personal portfolio and learning platform sharing projects, blogs, and insights in science, mathematics, and technology."
     />
     <meta name="author" content="JENIS" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#0f172a" />
+
+    <!-- SEO Enhancement -->
+    <meta
+      name="keywords"
+      content="Jen App, JENIS portfolio, science student portfolio, math learning, programming blog, personal web app 2026"
+    />
+    <meta name="creator" content="JENIS" />
+    <meta name="publisher" content="JENIS" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://jenisid.github.io/" />
+
+    <!-- Language & Geo -->
+    <meta name="language" content="en" />
+    <meta name="geo.region" content="ID" />
+    <meta name="geo.country" content="Indonesia" />
 
     <!-- Google Search Console -->
     <meta
@@ -26,27 +41,30 @@
     <!-- Open Graph -->
     <meta
       property="og:title"
-      content="JENIS | Natural Science Student Portfolio"
+      content="Jen App | Science, Math & Tech Portfolio"
     />
-    <meta property="og:site_name" content="JENIS Portfolio" />
+    <meta property="og:site_name" content="Jen App" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://jenisid.github.io/" />
+    <meta property="og:locale" content="en_US" />
     <meta
       property="og:image"
       content="https://jenisid.github.io/og-image.png"
     />
-    <meta property="og:image:alt" content="JENIS Portfolio og-image" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Jen App Portfolio Preview" />
     <meta
       property="og:description"
-      content="Explore projects, blog articles, and learning journey in mathematics and science."
+      content="Explore projects, blogs, and learning journey in science, mathematics, and technology."
     />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="JENIS Portfolio" />
+    <meta name="twitter:title" content="Jen App by JENIS" />
     <meta
       name="twitter:description"
-      content="Natural Science student passionate about mathematics and problem-solving."
+      content="Portfolio and learning journey in science, math, and tech."
     />
     <meta
       name="twitter:image"
@@ -57,31 +75,51 @@
     <link
       rel="icon"
       type="image/png"
-      href="./favicon-96x96.png"
+      href="./favicon-96x96.png?v=20260404"
       sizes="96x96"
     />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg?v=20260404" />
+    <link rel="shortcut icon" href="./favicon.ico?v=20260404" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./apple-touch-icon.png"
+      href="./apple-touch-icon.png?v=20260404"
     />
-    <meta name="apple-mobile-web-app-title" content="Portfolio JENIS" />
-    <link rel="manifest" href="./site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Jen App" />
+    <link rel="manifest" href="./site.webmanifest?v=20260404" />
 
-    <!-- Styles -->
+    <!-- Performance -->
+    <link rel="preload" href="./src/css/output.css" as="style" />
     <link rel="stylesheet" href="./src/css/output.css" />
 
-    <!-- Structured Data -->
+    <!-- Structured Data (Brand + Person) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "JENIS",
-        "url": "https://jenisid.github.io/",
-        "jobTitle": "Natural Science Student",
-        "sameAs": ["https://github.com/jenisid"]
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Jen App",
+            "url": "https://jenisid.github.io/",
+            "description": "A personal portfolio and learning platform focused on science, mathematics, and technology.",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "Person",
+            "name": "JENIS",
+            "url": "https://jenisid.github.io/",
+            "jobTitle": "Natural Science Student",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Jen App"
+            },
+            "sameAs": [
+              "https://github.com/jenisid",
+              "https://linkedin.com/in/jenisid",
+              "https://instagram.com/jenis_id"
+            ]
+          }
+        ]
       }
     </script>
   </head>
